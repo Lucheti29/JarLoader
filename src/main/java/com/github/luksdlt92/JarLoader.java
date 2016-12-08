@@ -17,7 +17,7 @@ public class JarLoader {
     private final Logger mLogger = Logger.getLogger(getClass().getSimpleName());
     private final String mParentClassName;
 
-    private JarLoader(List<JarDescription> list, String parentClassName) {
+    public JarLoader(List<JarDescription> list, String parentClassName) {
         mParentClassName = parentClassName;
 
         for (JarDescription description : list) {
